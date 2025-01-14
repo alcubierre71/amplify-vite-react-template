@@ -17,6 +17,7 @@ function App() {
     });
   }, []);
 
+  // Create Function
   function createTodo() {
     client.models.Todo.create({ content: window.prompt("Todo content") });
   }
